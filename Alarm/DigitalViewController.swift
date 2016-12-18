@@ -10,43 +10,6 @@ import UIKit
 
 class DigitalViewController: UIViewController {
     
-//    var digitaldateLabel = UILabel()
-//    
-//    // 日時フォーマット
-//    var dateFormatter: DateFormatter{
-//        let formatter = DateFormatter()
-//        formatter.dateFormat = "yyyy/MM/dd HH:mm:ss"
-//        return formatter
-//    }
-//    
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        // Do any additional setup after loading the view, typically from a nib.
-//        
-//        digitaldateLabel.frame = view.bounds
-//        digitaldateLabel.textAlignment = .center
-//        view.addSubview(digitaldateLabel)
-//        
-//        // 初回
-//        updateDigitalDateLabel()
-//        
-//        // 一定間隔で実行
-//        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(DigitalViewController.updateDigitalDateLabel), userInfo: nil, repeats: true)
-//    }
-//
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//        // Dispose of any resources that can be recreated.
-//    }
-//
-//    // 日時表示ラベル更新メソッド
-//    func updateDigitalDateLabel(){
-//        let now = Date()
-//        digitaldateLabel.text = dateFormatter.string(from: now)
-//        
-//        _ = Date()
-//    }
-
     @IBOutlet var yearLabel: UILabel!
     @IBOutlet var monthLabel: UILabel!
     @IBOutlet var daysLabel: UILabel!
@@ -54,8 +17,6 @@ class DigitalViewController: UIViewController {
     @IBOutlet var hourLabel: UILabel!
     @IBOutlet var minutesLabel: UILabel!
     @IBOutlet var secondLabel: UILabel!
-    
-    let str = "1234567890"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,7 +55,7 @@ class DigitalViewController: UIViewController {
     
     //1桁のものには0をつける。例えば1秒なら01秒に。
     func addZero(timeString: String, timeNuber: Int) -> String {
-        if print(str.timeString.count) == 1 {
+        if timeString.characters.count == 1 {
             return ("0\(timeNuber)")
         } else{
             return ("\(timeNuber)")
