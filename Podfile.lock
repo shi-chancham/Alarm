@@ -1,0 +1,12 @@
+PODS:
+  - CustomizableActionSheet (1.0.6)
+
+DEPENDENCIES:
+  - CustomizableActionSheet
+
+SPEC CHECKSUMS:
+  CustomizableActionSheet: 6d5a0eaa06ef3c0ecbc47be608ff79f15765894d
+
+PODFILE CHECKSUM: 6ecea29a353ed65b875a835ae563a93fcdaaaf55
+
+COCOAPODS: 1.0.0
