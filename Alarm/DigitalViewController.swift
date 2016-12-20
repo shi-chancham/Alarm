@@ -39,26 +39,26 @@ class DigitalViewController: UIViewController {
         let myCalendar: NSCalendar = NSCalendar(calendarIdentifier: NSCalendar.Identifier.gregorian)!
         //カレンダーを取得
 
-        let myComponetns = myCalendar.components([.year, .month, .day, .hour, .minute, .second, .weekday], from:myDate as Date)
+        let myComponents = myCalendar.components([.year, .month, .day, .hour, .minute, .second, .weekday], from:myDate as Date)
         
         let weekdayStrings: Array = ["nil","Sun.","Mon.","Tues.","Wed.","Thurs.","Fri.","Sat.","Sun."]
         
         /*Storyboardに表示*/
-        yearLabel.text = "\(myComponetns.year)"
-        monthLabel.text = addZero(timeString: String(describing: myComponetns.month), timeNuber: myComponetns.month!)
-        daysLabel.text = addZero(timeString: String(describing: myComponetns.day), timeNuber: myComponetns.day!)
-        dayOfTheWeekLabel.text = "\(weekdayStrings[myComponetns.weekday!])"
-        hourLabel.text = addZero(timeString: String(describing: myComponetns.hour), timeNuber: myComponetns.hour!)
-        minutesLabel.text = addZero(timeString: String(describing: myComponetns.minute), timeNuber: myComponetns.minute!)
-        secondLabel.text = addZero(timeString: String(describing: myComponetns.second), timeNuber: myComponetns.second!)
+        yearLabel.text = "\(myComponents.year!)"
+        monthLabel.text = addZero(timeString: String(describing: myComponents.month), timeNumber: myComponents.month!)
+        daysLabel.text = addZero(timeString: String(describing: myComponents.day), timeNumber: myComponents.day!)
+        dayOfTheWeekLabel.text = "\(weekdayStrings[myComponents.weekday!])"
+        hourLabel.text = addZero(timeString: String(describing: myComponents.hour), timeNumber: myComponents.hour!)
+        minutesLabel.text = addZero(timeString: String(describing: myComponents.minute), timeNumber: myComponents.minute!)
+        secondLabel.text = addZero(timeString: String(describing: myComponents.second), timeNumber: myComponents.second!)
     }
     
     //1桁のものには0をつける。例えば1秒なら01秒に。
-    func addZero(timeString: String, timeNuber: Int) -> String {
+    func addZero(timeString: String, timeNumber: Int) -> String {
         if timeString.characters.count == 1 {
-            return ("0\(timeNuber)")
+            return ("0\(timeNumber)")
         } else{
-            return ("\(timeNuber)")
+            return ("\(timeNumber)")
         }
     }
     
