@@ -56,17 +56,17 @@
                                 <color key="textColor" white="1" alpha="0.80587037849999998" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vxf-wk-6bt">
-                                <frame key="frameInset" minX="285" minY="176" width="74" height="45"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcU-VJ-shd">
+                                <frame key="frameInset" minX="22" minY="140" width="117" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Cubos-Regular" family="Cubos" pointSize="45"/>
+                                <fontDescription key="fontDescription" name="Cubos-Regular" family="Cubos" pointSize="91"/>
                                 <color key="textColor" white="1" alpha="0.80587037849999998" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcU-VJ-shd">
-                                <frame key="frameInset" minX="16" minY="141" width="117" height="91"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpR-Oq-qEu">
+                                <frame key="frameInset" minX="160" minY="141" width="117" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Cubos-Regular" family="Cubos" pointSize="91"/>
+                                <fontDescription key="fontDescription" name="Cubos-Regular" family="Cubos" pointSize="90"/>
                                 <color key="textColor" white="1" alpha="0.80587037849999998" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -105,10 +105,10 @@
                                 <color key="textColor" white="1" alpha="0.80587037849999998" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpR-Oq-qEu">
-                                <frame key="frameInset" minX="166" minY="142" width="117" height="90"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vxf-wk-6bt">
+                                <frame key="frameInset" minX="278" minY="176" width="74" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Cubos-Regular" family="Cubos" pointSize="90"/>
+                                <fontDescription key="fontDescription" name="Cubos-Regular" family="Cubos" pointSize="45"/>
                                 <color key="textColor" white="1" alpha="0.80587037849999998" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
