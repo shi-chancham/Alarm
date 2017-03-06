@@ -29,6 +29,10 @@ class DigitalViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     //NSTimerを利用して60分の1秒ごとに呼びたす。
     func update() {
         nowTime()
@@ -45,12 +49,12 @@ class DigitalViewController: UIViewController {
         
         /*Storyboardに表示*/
         yearLabel.text = "\(myComponents.year!)"
-        monthLabel.text = addZero(timeString: String(describing: myComponents.month), timeNumber: myComponents.month!)
-        daysLabel.text = addZero(timeString: String(describing: myComponents.day), timeNumber: myComponents.day!)
+        monthLabel.text = addZero(timeString: String(myComponents.month!), timeNumber: myComponents.month!)
+        daysLabel.text = addZero(timeString: String(myComponents.day!), timeNumber: myComponents.day!)
         dayOfTheWeekLabel.text = "\(weekdayStrings[myComponents.weekday!])"
-        hourLabel.text = addZero(timeString: String(describing: myComponents.hour), timeNumber: myComponents.hour!)
-        minutesLabel.text = addZero(timeString: String(describing: myComponents.minute), timeNumber: myComponents.minute!)
-        secondLabel.text = addZero(timeString: String(describing: myComponents.second), timeNumber: myComponents.second!)
+        hourLabel.text = addZero(timeString: String(myComponents.hour!), timeNumber: myComponents.hour!)
+        minutesLabel.text = addZero(timeString: String(myComponents.minute!), timeNumber: myComponents.minute!)
+        secondLabel.text = addZero(timeString: String(myComponents.second!), timeNumber: myComponents.second!)
     }
     
     //1桁のものには0をつける。例えば1秒なら01秒に。
@@ -62,4 +66,8 @@ class DigitalViewController: UIViewController {
         }
     }
     
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        UIApplication.shared.isIdleTimerDisabled = true
+        return true
+    }
 }

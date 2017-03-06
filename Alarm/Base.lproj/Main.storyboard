@@ -3,18 +3,22 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <array key="Cubos.ttf">
             <string>Cubos-Regular</string>
         </array>
+        <array key="stealthgothicbmono.ttf">
+            <string>StealthGothicBmono</string>
+        </array>
     </customFonts>
     <scenes>
-        <!--Item 2-->
+        <!--Alarm-->
         <scene sceneID="l4F-Eh-wTW">
             <objects>
-                <viewController id="EJH-wq-Ore" sceneMemberID="viewController">
+                <viewController id="EJH-wq-Ore" customClass="CostomclockViewController" customModule="Alarm" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kFY-Sc-DlI"/>
                         <viewControllerLayoutGuide type="bottom" id="In8-sA-OIc"/>
@@ -22,15 +26,108 @@
                     <view key="view" contentMode="scaleToFill" id="wG0-97-fGi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1rS-C1-p3I">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.83146215270000001" green="0.99674076570000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="AiW-IE-M6y">
+                                <date key="date" timeIntervalSinceReferenceDate="509693305.84249002">
+                                    <!--2017-02-25 05:28:25 +0000-->
+                                </date>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="myDPfuncWithSender:" destination="EJH-wq-Ore" eventType="valueChanged" id="QbA-7B-cm1"/>
+                                </connections>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lxj-dU-pMS">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ai6-vi-6d5"/>
+                                    <constraint firstAttribute="width" constant="160" id="D4c-Ed-KTu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="StealthGothicBmono" family="StealthGothicBmono" pointSize="25"/>
+                                <state key="normal" title="set">
+                                    <color key="titleColor" red="0.033656088840000001" green="0.18255355500000001" blue="0.48152121110000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="myButtonfuncWithSender:" destination="EJH-wq-Ore" eventType="touchUpInside" id="gF1-sB-9ZQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3h3-qY-Hgf">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="4Xh-lZ-t4I"/>
+                                    <constraint firstAttribute="width" constant="210" id="hws-4d-BwL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="StealthGothicBmono" family="StealthGothicBmono" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AiW-IE-M6y" firstAttribute="centerX" secondItem="wG0-97-fGi" secondAttribute="centerX" id="CIL-Eo-l9h"/>
+                            <constraint firstItem="Lxj-dU-pMS" firstAttribute="centerX" secondItem="AiW-IE-M6y" secondAttribute="centerX" id="Tsy-ec-hfJ"/>
+                            <constraint firstItem="AiW-IE-M6y" firstAttribute="top" secondItem="3h3-qY-Hgf" secondAttribute="bottom" constant="45" id="UGf-f5-0EM"/>
+                            <constraint firstItem="AiW-IE-M6y" firstAttribute="centerY" secondItem="wG0-97-fGi" secondAttribute="centerY" id="X75-2c-GtL"/>
+                            <constraint firstItem="In8-sA-OIc" firstAttribute="top" secondItem="AiW-IE-M6y" secondAttribute="bottom" constant="206" id="esn-Tw-yE3"/>
+                            <constraint firstItem="3h3-qY-Hgf" firstAttribute="centerX" secondItem="AiW-IE-M6y" secondAttribute="centerX" id="ffP-mL-Q9a"/>
+                            <constraint firstItem="Lxj-dU-pMS" firstAttribute="top" secondItem="AiW-IE-M6y" secondAttribute="bottom" constant="40" id="qMQ-Xc-58k"/>
+                            <constraint firstItem="AiW-IE-M6y" firstAttribute="trailing" secondItem="wG0-97-fGi" secondAttribute="trailingMargin" id="uuE-Q8-ncJ"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="hB9-fc-q8z"/>
+                    <tabBarItem key="tabBarItem" title="Alarm" id="hB9-fc-q8z"/>
+                    <connections>
+                        <outlet property="choosePicker" destination="AiW-IE-M6y" id="5s2-gI-mBs"/>
+                        <outlet property="clockLabel" destination="3h3-qY-Hgf" id="MFa-tE-NmF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lxr-as-YRq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-126" y="533"/>
+            <point key="canvasLocation" x="-127.2" y="532.98350824587715"/>
         </scene>
-        <!--Item 1-->
+        <!--Explain View Controller-->
+        <scene sceneID="Lr2-qB-w8M">
+            <objects>
+                <viewController storyboardIdentifier="Main" id="yoq-3o-61V" customClass="ExplainViewController" customModule="Alarm" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0If-rO-6bf"/>
+                        <viewControllerLayoutGuide type="bottom" id="flU-PU-Cjr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6eF-rj-MbP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Igj-kY-KVD">
+                                <frame key="frameInset" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="f6f-1A-TzA">
+                                        <barButtonItem key="leftBarButtonItem" title="back" id="KBA-js-ih3">
+                                            <connections>
+                                                <action selector="back" destination="yoq-3o-61V" id="XZn-JH-0uh"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="説明画面.001.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="IHj-u7-t7o">
+                                <frame key="frameInset" minY="44" width="375" height="623"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q9Z-r6-MPd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="604" y="532.98350824587715"/>
+        </scene>
+        <!--Digital-->
         <scene sceneID="ZHw-qv-tBa">
             <objects>
                 <viewController id="RLe-hL-PtD" customClass="DigitalViewController" customModule="Alarm" customModuleProvider="target" sceneMemberID="viewController">
@@ -115,7 +212,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.020405759905459217" green="0.096163563086414841" blue="0.35461868523316065" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="o6B-0j-QaY"/>
+                    <tabBarItem key="tabBarItem" title="Digital" id="o6B-0j-QaY"/>
                     <connections>
                         <outlet property="dayOfTheWeekLabel" destination="piX-gr-SEp" id="1S3-fS-ObK"/>
                         <outlet property="daysLabel" destination="X39-FR-FVL" id="Cuv-3K-697"/>
@@ -149,7 +246,7 @@
             </objects>
             <point key="canvasLocation" x="-1077" y="206"/>
         </scene>
-        <!--Item-->
+        <!--Analog-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Alarm" customModuleProvider="target" sceneMemberID="viewController">
@@ -194,19 +291,10 @@
                                     </view>
                                 </subviews>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vmg-2f-yxi">
-                                <frame key="frameInset" minX="16" minY="28" width="66" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Change"/>
-                                <connections>
-                                    <action selector="buttonShowWasTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bjm-mE-P3c"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="lpC-p0-Beg"/>
+                    <tabBarItem key="tabBarItem" title="Analog" id="zQ9-C7-anu"/>
                     <connections>
                         <outlet property="hourView" destination="0HR-EN-i2l" id="Q0L-fl-jrw"/>
                         <outlet property="minuteView" destination="uIY-UO-yDa" id="Zph-oY-O4W"/>
@@ -215,7 +303,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-276" y="-845.1274362818591"/>
+            <point key="canvasLocation" x="-274.39999999999998" y="-857.72113943028489"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="説明画面.001.jpeg" width="375" height="623"/>
+    </resources>
 </document>

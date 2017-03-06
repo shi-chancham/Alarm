@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		A7E4A38DA70015FD25EE86D3 /* Pods_Alarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5B94613156B16804020EB1 /* Pods_Alarm.framework */; };
+		B13151791E3C948200F8D77F /* CostomclockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13151781E3C948200F8D77F /* CostomclockViewController.swift */; };
 		B170A2EA1E054CF00042BB72 /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B170A2E81E054CF00042BB72 /* SampleView.swift */; };
 		B170A2EB1E054CF00042BB72 /* SampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B170A2E91E054CF00042BB72 /* SampleView.xib */; };
 		B170A2ED1E0658CA0042BB72 /* Cubos.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B170A2EC1E0658CA0042BB72 /* Cubos.ttf */; };
 		B170A2EF1E0659A40042BB72 /* LettersLaughingattheirExecution.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B170A2EE1E0659A40042BB72 /* LettersLaughingattheirExecution.ttf */; };
 		B170A2F11E0659B40042BB72 /* scoreboard.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B170A2F01E0659B40042BB72 /* scoreboard.ttf */; };
 		B170A2F31E065A070042BB72 /* DigitalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B170A2F21E065A070042BB72 /* DigitalViewController.swift */; };
+		B18BECD21E61A716003BDC7C /* ExplainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18BECD11E61A716003BDC7C /* ExplainViewController.swift */; };
+		B18BECD41E6DCCCA003BDC7C /* 説明画面.001.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B18BECD31E6DCCCA003BDC7C /* 説明画面.001.jpeg */; };
 		B1F87D381DCDE48200546179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F87D371DCDE48200546179 /* AppDelegate.swift */; };
 		B1F87D3A1DCDE48200546179 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F87D391DCDE48200546179 /* ViewController.swift */; };
 		B1F87D3D1DCDE48200546179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1F87D3B1DCDE48200546179 /* Main.storyboard */; };
@@ -42,12 +45,17 @@
 
 /* Begin PBXFileReference section */
 		34E0E8FF59F920CBB02153FE /* Pods-Alarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alarm.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alarm/Pods-Alarm.release.xcconfig"; sourceTree = "<group>"; };
+		B13151781E3C948200F8D77F /* CostomclockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CostomclockViewController.swift; sourceTree = "<group>"; };
 		B170A2E81E054CF00042BB72 /* SampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
 		B170A2E91E054CF00042BB72 /* SampleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleView.xib; sourceTree = "<group>"; };
 		B170A2EC1E0658CA0042BB72 /* Cubos.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cubos.ttf; sourceTree = "<group>"; };
 		B170A2EE1E0659A40042BB72 /* LettersLaughingattheirExecution.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LettersLaughingattheirExecution.ttf; sourceTree = "<group>"; };
 		B170A2F01E0659B40042BB72 /* scoreboard.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = scoreboard.ttf; sourceTree = "<group>"; };
 		B170A2F21E065A070042BB72 /* DigitalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DigitalViewController.swift; sourceTree = "<group>"; };
+		B18BECCF1E61A1C7003BDC7C /* stealthgothica.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = stealthgothica.ttf; sourceTree = "<group>"; };
+		B18BECD01E61A27E003BDC7C /* stealthgothicbmono.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = stealthgothicbmono.ttf; sourceTree = "<group>"; };
+		B18BECD11E61A716003BDC7C /* ExplainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplainViewController.swift; sourceTree = "<group>"; };
+		B18BECD31E6DCCCA003BDC7C /* 説明画面.001.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "説明画面.001.jpeg"; sourceTree = "<group>"; };
 		B1F87D341DCDE48200546179 /* Alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F87D371DCDE48200546179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1F87D391DCDE48200546179 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -137,12 +145,17 @@
 		B1F87D361DCDE48200546179 /* Alarm */ = {
 			isa = PBXGroup;
 			children = (
+				B18BECD31E6DCCCA003BDC7C /* 説明画面.001.jpeg */,
+				B18BECD01E61A27E003BDC7C /* stealthgothicbmono.ttf */,
+				B18BECCF1E61A1C7003BDC7C /* stealthgothica.ttf */,
 				B170A2F01E0659B40042BB72 /* scoreboard.ttf */,
 				B170A2EE1E0659A40042BB72 /* LettersLaughingattheirExecution.ttf */,
 				B170A2EC1E0658CA0042BB72 /* Cubos.ttf */,
 				B1F87D371DCDE48200546179 /* AppDelegate.swift */,
 				B1F87D391DCDE48200546179 /* ViewController.swift */,
 				B170A2F21E065A070042BB72 /* DigitalViewController.swift */,
+				B13151781E3C948200F8D77F /* CostomclockViewController.swift */,
+				B18BECD11E61A716003BDC7C /* ExplainViewController.swift */,
 				B1F87D3B1DCDE48200546179 /* Main.storyboard */,
 				B1F87D3E1DCDE48200546179 /* Assets.xcassets */,
 				B1F87D401DCDE48200546179 /* LaunchScreen.storyboard */,
@@ -289,6 +302,7 @@
 				B170A2EB1E054CF00042BB72 /* SampleView.xib in Resources */,
 				B170A2ED1E0658CA0042BB72 /* Cubos.ttf in Resources */,
 				B1F87D3D1DCDE48200546179 /* Main.storyboard in Resources */,
+				B18BECD41E6DCCCA003BDC7C /* 説明画面.001.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +377,9 @@
 			files = (
 				B170A2EA1E054CF00042BB72 /* SampleView.swift in Sources */,
 				B1F87D3A1DCDE48200546179 /* ViewController.swift in Sources */,
+				B13151791E3C948200F8D77F /* CostomclockViewController.swift in Sources */,
 				B1F87D381DCDE48200546179 /* AppDelegate.swift in Sources */,
+				B18BECD21E61A716003BDC7C /* ExplainViewController.swift in Sources */,
 				B170A2F31E065A070042BB72 /* DigitalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

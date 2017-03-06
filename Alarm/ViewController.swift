@@ -45,6 +45,8 @@ class ViewController: UIViewController, SampleViewDelegate {
     }
     
     @IBAction func buttonShowWasTapped() {
+        self.tabBarController?.tabBar.isHidden = true
+        
         var items = [CustomizableActionSheetItem]()
         
         // First view
@@ -66,6 +68,7 @@ class ViewController: UIViewController, SampleViewDelegate {
         clearItem.selectAction = { (actionSheet: CustomizableActionSheet) -> Void in
             self.view.backgroundColor = UIColor.white
             actionSheet.dismiss()
+            self.tabBarController?.tabBar.isHidden = false
         }
         items.append(clearItem)
         
@@ -76,6 +79,7 @@ class ViewController: UIViewController, SampleViewDelegate {
         closeItem.textColor = UIColor(red: 0.4, green: 0.4, blue: 0.4, alpha: 1)
         closeItem.selectAction = { (actionSheet: CustomizableActionSheet) -> Void in
             actionSheet.dismiss()
+            self.tabBarController?.tabBar.isHidden = false
         }
         items.append(closeItem)
         
@@ -92,6 +96,7 @@ class ViewController: UIViewController, SampleViewDelegate {
         if let actionSheet = self.actionSheet {
             actionSheet.dismiss()
         }
+        self.tabBarController?.tabBar.isHidden = false
         self.view.backgroundColor = color
     }
     
@@ -117,5 +122,9 @@ class ViewController: UIViewController, SampleViewDelegate {
         }
     }
     
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        UIApplication.shared.isIdleTimerDisabled = true
+        return true
+    }
 }
 
